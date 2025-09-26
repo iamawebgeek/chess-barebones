@@ -1,6 +1,6 @@
 {
   "name": "@chess-barebones/core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Core package to build chess like or board games on top",
   "keywords": [
     "chess",
@@ -20,7 +20,11 @@
     },
     "./package.json": "./package.json"
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
