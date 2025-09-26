@@ -14,7 +14,7 @@
     "docs:build": "pnpm --dir docs build",
     "docs:serve": "pnpm --dir docs serve",
     "docs:clear": "pnpm --dir docs clear",
-    "docs:deploy": "pnpm --dir docs deploy",
+    "docs:deploy": "pnpm --filter chess-barebones-docs deploy",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "preinstall": "npx only-allow pnpm",
