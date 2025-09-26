@@ -1,6 +1,6 @@
 {
   "name": "@chess-barebones/chess-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React integration for @chess-barebones/chess",
   "keywords": [
     "chess",
@@ -20,7 +20,11 @@
     },
     "./package.json": "./package.json"
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
