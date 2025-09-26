@@ -1,6 +1,7 @@
 name: Release
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -40,6 +41,11 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Configure Git for Changesets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
@@ -55,12 +61,6 @@ jobs:
       - name: Build docs
         if: steps.changesets.outputs.published == 'true'
         run: pnpm docs:build
-
-      - name: Configure Git for docs deploy
-        if: steps.changesets.outputs.published == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy docs to GitHub Pages
         if: steps.changesets.outputs.published == 'true'
