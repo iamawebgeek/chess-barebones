@@ -1,0 +1,19 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0 2rem;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 160px;
+  width: 160px;
+  padding: 20px;
+  filter: drop-shadow(0 6px 16px rgba(0,0,0,0.12));
+}
+
+/* Tighter content width inside cards */
+.features .padding-horiz--md {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}

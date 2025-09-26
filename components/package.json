@@ -1,0 +1,44 @@
+{
+  "name": "chess-barebones-ui-components",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@chess-barebones/chess": "workspace:*",
+    "@chess-barebones/chess-react": "workspace:*",
+    "@chess-barebones/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "esbuild-plugin-svgr": "^3.1.1",
+    "react": "*",
+    "react-dom": "*",
+    "styled-components": "^6.1.19"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1"
+}

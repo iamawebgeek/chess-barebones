@@ -1,0 +1,35 @@
+{
+  "name": "chess-barebones-example-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chess-barebones/chess": "workspace:^",
+    "@chess-barebones/chess-react": "workspace:^",
+    "@chess-barebones/core": "workspace:^",
+    "chess-barebones-ui-components": "workspace:^",
+    "react": "*",
+    "react-dom": "*",
+    "socket.io-client": "^4.8.1",
+    "styled-components": "^6.1.19"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.0",
+    "vite": "^7.1.0"
+  }
+}

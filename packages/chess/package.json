@@ -1,0 +1,51 @@
+{
+  "name": "@chess-barebones/chess",
+  "version": "0.0.0",
+  "description": "Chess specific additions for @chess-barebones/core",
+  "keywords": [
+    "chess",
+    "chess barebones",
+    "chess puzzle",
+    "chess backend",
+    "checkmate",
+    "san",
+    "fen"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "iamawebgeek <iamawebgeek@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamawebgeek/chess-barebones.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamawebgeek/chess-barebones/issues"
+  },
+  "homepage": "https://iamawebgeek.github.io/chess-barebones",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@chess-barebones/core": "workspace:^"
+  }
+}

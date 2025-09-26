@@ -1,0 +1,44 @@
+{
+  "name": "@chess-barebones/core",
+  "version": "0.0.0",
+  "description": "Core package to build chess like or board games on top",
+  "keywords": [
+    "chess",
+    "checkers",
+    "board game"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "author": "iamawebgeek <iamawebgeek@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamawebgeek/chess-barebones.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamawebgeek/chess-barebones/issues"
+  },
+  "homepage": "https://iamawebgeek.github.io/chess-barebones",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,104 @@
+/**
+ * Global styles (Infima overrides + small theme tweaks)
+ */
+
+:root {
+  /* Chess-flavored teal + sand palette (light mode) */
+  --ifm-color-primary: #2a9d8f; /* teal */
+  --ifm-color-primary-dark: #258e82;
+  --ifm-color-primary-darker: #227f75;
+  --ifm-color-primary-darkest: #1c675f;
+  --ifm-color-primary-light: #3fb3a6;
+  --ifm-color-primary-lighter: #63c3b8;
+  --ifm-color-primary-lightest: #8ed5cd;
+
+  --ifm-font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --ifm-heading-font-weight: 700;
+  --ifm-code-font-size: 92.5%;
+
+  /* Subtle code highlight */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.06);
+
+  /* Card and surface */
+  --cb-surface: #ffffff;
+  --cb-surface-alt: #f6f7f9;
+  --cb-border: #e7e9ee;
+  --cb-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+  /* Links */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: #23877b;
+}
+
+/* Dark mode tuning (lighter primaries for contrast) */
+[data-theme='dark'] {
+  --ifm-color-primary: #5fd3c6;
+  --ifm-color-primary-dark: #49c7b9;
+  --ifm-color-primary-darker: #3dbfb0;
+  --ifm-color-primary-darkest: #2ba295;
+  --ifm-color-primary-light: #85ded4;
+  --ifm-color-primary-lighter: #a2e6df;
+  --ifm-color-primary-lightest: #c9f1ec;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+
+  --cb-surface: #16181d;
+  --cb-surface-alt: #1c1f26;
+  --cb-border: #272b34;
+  --cb-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* --- Layout polish --- */
+.navbar {
+  box-shadow: var(--cb-shadow);
+  backdrop-filter: saturate(120%) blur(6px);
+}
+
+.footer {
+  border-top: 1px solid var(--cb-border);
+}
+
+.hero {
+  color: var(--ifm-font-color-base);
+}
+
+/* --- Hero tweaks (background handled in the page module CSS) --- */
+.hero .hero__title {
+  letter-spacing: -0.015em;
+}
+.hero .hero__subtitle {
+  opacity: 0.9;
+}
+
+/* --- Cards / feature sections --- */
+.card, .theme-doc-markdown .card {
+  background: var(--cb-surface);
+  border: 1px solid var(--cb-border);
+  box-shadow: var(--cb-shadow);
+  border-radius: 14px;
+}
+
+/* --- Buttons --- */
+.button.button--primary {
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(42, 157, 143, 0.25);
+}
+.button {
+  border-radius: 10px;
+}
+
+/* --- Code blocks --- */
+.theme-code-block, pre code, code {
+  border-radius: 10px;
+}
+.theme-code-block {
+  box-shadow: var(--cb-shadow);
+}
+
+/* --- Typography spacing --- */
+.markdown h1, .markdown h2, .markdown h3 {
+  margin-top: 2.2rem;
+}
+.markdown p, .markdown ul, .markdown ol {
+  line-height: 1.7;
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "src/**/*.{ts,tsx,js,jsx}",
+        "tsup.config.*",
+        "tsconfig*.json",
+        ".env*",
+        "!**/*.test.{ts,tsx,js,jsx}"
+      ],
+      "outputs": ["dist/**"]
+    },
+
+    "typecheck": {
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "src/**/*.{ts,tsx}",
+        "tsconfig*.json",
+        ".env*"
+      ],
+      "outputs": []
+    },
+
+    "test": {
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "**/*.{test,spec}.{ts,tsx,js,jsx}",
+        "**/test/**",
+        "**/tests/**",
+        "vitest.config.*",
+        ".env*"
+      ],
+      "outputs": [],
+      "env": ["CI", "NODE_ENV"]
+    },
+
+    "test:coverage": {
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "**/*.{test,spec}.{ts,tsx,js,jsx}",
+        "**/test/**",
+        "**/tests/**",
+        "vitest.config.*",
+        ".env*"
+      ],
+      "outputs": ["coverage/**"],
+      "env": ["CI", "NODE_ENV"]
+    },
+
+    "lint": {
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "eslint.config.*",
+        ".eslintrc*",
+        "prettier*",
+        "!**/node_modules/**"
+      ],
+      "outputs": []
+    },
+
+    "dev": { "cache": false, "persistent": true },
+    "preview": { "dependsOn": ["build"], "cache": false, "persistent": true }
+  },
+  "globalDependencies": [
+    "package.json",
+    "pnpm-workspace.yaml",
+    "turbo.json",
+    "eslint.config.*",
+    ".eslintrc*",
+    "tsconfig*.json",
+    "vitest.config.*",
+    ".env*"
+  ]
+}

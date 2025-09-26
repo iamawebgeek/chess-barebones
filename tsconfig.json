@@ -1,12 +1,12 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "noImplicitAny": false,
-    "target": "ESNext",
-    "module": "CommonJS",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+    "baseUrl": ".",
+    "paths": {
+      "@chess-barebones/core": ["packages/core/src"],
+      "@chess-barebones/chess": ["packages/chess/src"],
+      "@chess-barebones/chess-react": ["packages/chess-react/src"],
+      "chess-barebones-ui-components": ["components/src"]
+    }
   }
 }
