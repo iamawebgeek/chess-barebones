@@ -59,12 +59,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Build docs
-        if: steps.changesets.outputs.published == 'true'
-        run: pnpm docs:build
-
       - name: Deploy docs to GitHub Pages
-        if: steps.changesets.outputs.published == 'true'
+        # if: steps.changesets.outputs.published == 'true'
         run: pnpm docs:deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
