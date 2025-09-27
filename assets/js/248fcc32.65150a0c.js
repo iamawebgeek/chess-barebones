@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchess_barebones_docs=self.webpackChunkchess_barebones_docs||[]).push([[9986],{3038:e=>{e.exports=JSON.parse('{"tags":[{"label":"Release","permalink":"/chess-barebones/blog/tags/release","description":"Tag for releases","count":1}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchess_barebones_docs=self.webpackChunkchess_barebones_docs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Chess barebones v0.1.0 is out \ud83c\udf89","permalink":"/blog/mdx-blog-post","unlisted":false,"date":"2025-09-26T00:00:00.000Z"}]}')}}]);

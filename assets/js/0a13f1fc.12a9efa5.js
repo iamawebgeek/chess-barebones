@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchess_barebones_docs=self.webpackChunkchess_barebones_docs||[]).push([[1980],{1288:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/chess-barebones/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

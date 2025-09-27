@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchess_barebones_docs=self.webpackChunkchess_barebones_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/chess-barebones/blog","blogTitle":"Blog","authorsListPath":"/chess-barebones/blog/authors"}')}}]);
