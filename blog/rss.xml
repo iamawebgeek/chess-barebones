@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Chess Barebones Blog</title>
+        <link>https://iamawebgeek.github.io/chess-barebones/blog</link>
+        <description>Chess Barebones Blog</description>
+        <lastBuildDate>Fri, 26 Sep 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Chess barebones v0.1.0 is out 🎉]]></title>
+            <link>https://iamawebgeek.github.io/chess-barebones/blog/mdx-blog-post</link>
+            <guid>https://iamawebgeek.github.io/chess-barebones/blog/mdx-blog-post</guid>
+            <pubDate>Fri, 26 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Today marks the initial release of Chess-barebones!]]></description>
+            <content:encoded><![CDATA[<p>Today marks the initial release of Chess-barebones!</p>
+<p>It includes in itself these 3 packages:</p>
+<!-- -->
+<ul>
+<li><code>@chess-barebones/core</code></li>
+<li><code>@chess-barebones/chess</code></li>
+<li><code>@chess-barebones/chess-react</code></li>
+</ul>
+<p>You can find detailed documentation for every package in the <a href="https://iamawebgeek.github.io/chess-barebones/docs/getting-started/packages">docs</a> section</p>]]></content:encoded>
+            <category>Release</category>
+        </item>
+    </channel>
+</rss>

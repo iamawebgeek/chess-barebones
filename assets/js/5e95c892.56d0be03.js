@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchess_barebones_docs=self.webpackChunkchess_barebones_docs||[]).push([[9647],{568:(e,s,r)=>{r.r(s),r.d(s,{default:()=>h});r(3917);var c=r(3372),a=r(7424),n=r(2483),u=r(3385),o=r(951),d=r(1273);function h(e){return(0,d.jsx)(n.e3,{className:(0,c.A)(a.G.wrapper.docsPages),children:(0,d.jsx)(o.A,{children:(0,u.v)(e.route.routes)})})}}}]);
