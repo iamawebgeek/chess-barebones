@@ -51,7 +51,6 @@
 /* --- Layout polish --- */
 .navbar {
   box-shadow: var(--cb-shadow);
-  backdrop-filter: saturate(120%) blur(6px);
 }
 
 .footer {
